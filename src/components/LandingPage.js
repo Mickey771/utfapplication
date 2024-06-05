@@ -9,23 +9,26 @@ import SectionSix from './Landing/SectionSix'
 import SectionSeven from './Landing/SectionSeven'
 import SectionEight from './Landing/SectionEight'
 import Footer from './Landing/Footer'
+import SharedLayout from './SharedLayout'
 
 
 
 const LandingPage = () => {
     return (
-        <main className='landing'>
-            <Navbar />
-            <SectionOne />
-            <SectionTwo />
-            <SectionThree />
-            <SectionFour />
-            <SectionFive />
-            <SectionSix />
-            <SectionSeven />
-            <SectionEight />
-            <Footer />
-        </main>
+        <SharedLayout>
+            <main className='landing'>
+                {/* <Navbar /> */}
+                <SectionOne />
+                <SectionTwo />
+                <SectionThree />
+                <SectionFour />
+                <SectionFive />
+                <SectionSix />
+                <SectionSeven />
+                <SectionEight />
+                {/* <Footer /> */}
+            </main>
+        </SharedLayout>
     )
 }
 

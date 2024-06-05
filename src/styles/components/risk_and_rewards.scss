@@ -1,0 +1,19 @@
+.risk_and_rewards {
+  padding: 40px 80px;
+  background: $primaryBlue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 20px 40px;
+  }
+
+  & p {
+    color: white;
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 15px;
+    }
+  }
+}

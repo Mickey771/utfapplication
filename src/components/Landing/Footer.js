@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -6,7 +7,7 @@ const Footer = () => {
             <section className="footer-wrapper">
                 <article>
                     <h2>Company</h2>
-                    <p>About us</p>
+                    <Link to='/about'>About us</Link>
                     <p>Contact us</p>
                     <p>Careers</p>
                     <p>Press</p>
@@ -22,15 +23,13 @@ const Footer = () => {
                 <article>
                     <h2>Services</h2>
                     <p>Copy Trading</p>
-                    <p>Trading Signals</p>
-                    <p>Risk</p>
-                    <p>Management</p>
+                    <Link to={'/trading-signals'}> <p>Trading Signals</p></Link>
+                    <Link to={'/risk-and-rewards'}> <p>Risk & Rewards</p></Link>
                 </article>
                 <article>
                     <h2>Legal</h2>
-                    <p>Privacy Policy</p>
-                    <p>Terms &</p>
-                    <p>Conditions</p>
+                    <Link to={'/privacy-policy'}><p>Privacy Policy</p></Link>
+                    <Link to={'/terms-and-conditions'}><p>Terms & Conditions</p></Link>
                 </article>
                 <article>
                     <h2>Contact Us</h2>

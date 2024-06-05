@@ -1,7 +1,7 @@
 export const links = [
     {
         text: 'Home',
-        path: '/home',
+        path: '/',
         active: true
     },
     {

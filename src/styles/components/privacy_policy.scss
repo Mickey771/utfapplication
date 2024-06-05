@@ -1,0 +1,41 @@
+.privacy_policy {
+  padding: 40px 80px;
+  background: $primaryBlue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 20px 40px;
+  }
+
+  & h2,
+  h3,
+  h4 {
+    color: white;
+    margin: 0;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 20px;
+    }
+  }
+
+  & p {
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 15px;
+    }
+  }
+
+  & ol,
+  ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & li {
+      color: white;
+    }
+  }
+}

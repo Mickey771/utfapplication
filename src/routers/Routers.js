@@ -18,12 +18,23 @@ import RewardPage from "../components/users/client/RewardPage";
 import MarketPage from "../components/users/client/MarketPage";
 import AccountPage from "../components/users/client/AccountPage";
 import LandingPage from '../components/LandingPage';
+import AboutPage from '../components/AboutPage';
+import TradingSignals from '../components/TradingSignals';
+import TermsAndConditions from '../components/TermsAndConditions';
+import Errorpage from '../components/Errorpage';
+import PrivacyPolicy from '../components/PrivacyPolicy';
+import RiskAndRewards from '../components/RiskAndRewards';
 
 const Routers = () => (
     <BrowserRouter>
         <Routes>
             {/* <Route path='/' element={<LaunchPage />} /> */}
             <Route path='/' element={<LandingPage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/trading-signals' element={<TradingSignals />} />
+            <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/risk-and-rewards' element={<RiskAndRewards />} />
             {/* <Route path='/landing' element={<LandingPage />} /> */}
             <Route path='/signin' element={<SigninPage />} />
             <Route path='/signup' element={<SignupPage />} />
@@ -37,6 +48,7 @@ const Routers = () => (
             <Route path='/market' element={<MarketPage />} />
             <Route path='/account' element={<AccountPage />} />
             <Route path='/terms' element={<TermsPage />} />
+            <Route path='*' element={<Errorpage />} />
         </Routes>
         <NotificationModal />
     </BrowserRouter>
