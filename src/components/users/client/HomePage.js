@@ -33,7 +33,6 @@ export default function HomePage() {
     const countries = useSelector(state => state.configuration.countries);
     const pairs = useSelector(state => state.configuration.pairs);
     const user = useSelector(state => state.account.user);
-    //    console.log(pairs)
 
 
     let floatingPL = 0;

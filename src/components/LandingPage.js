@@ -10,15 +10,20 @@ import SectionSeven from './Landing/SectionSeven'
 import SectionEight from './Landing/SectionEight'
 import Footer from './Landing/Footer'
 import SharedLayout from './SharedLayout'
+import { useSelector } from 'react-redux'
 
 
 
 const LandingPage = () => {
+    const pairs = useSelector(state => state.configuration.pairs);
+
+    console.log('pairs', pairs);
+
     return (
         <SharedLayout>
             <main className='landing'>
                 {/* <Navbar /> */}
-                <SectionOne />
+                <SectionOne pairs={pairs} />
                 <SectionTwo />
                 <SectionThree />
                 <SectionFour />
