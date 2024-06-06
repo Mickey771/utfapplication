@@ -1,8 +1,23 @@
 import React from 'react'
 import { RoundedImage } from '../Image'
 import { LineChart } from '../Chart'
+import { loopFunction, populatePairs } from '../../api/configuration'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 const SectionOne = ({ pairs }) => {
+    const [currentCount, setCount] = useState(0)
+
+    useEffect(() => {
+        if (currentCount >= 1)
+            return
+        setCount(1)
+
+        loopFunction(populatePairs, 5000);
+        // loopFunction(populateUser);
+        // setConfig()
+    }, []);
+
     return (
         <section className='section_one_container'>
             <section className='section_one' style={{ backgroundImage: 'url(/images/looper.svg)', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
