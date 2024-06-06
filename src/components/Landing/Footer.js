@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { MdOutlineFacebook } from "react-icons/md";
+import { FaTwitter, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -8,8 +10,8 @@ const Footer = () => {
                 <article>
                     <h2>Company</h2>
                     <Link to='/about'>About us</Link>
-                    <p>Contact us</p>
-                    <p>Careers</p>
+                    <a href='#section-eight'> <p>Contact us</p></a>
+                    <a href='#section-eight'> <p>Careers</p></a>
                     <p>Press</p>
                 </article>
                 <article>
@@ -41,7 +43,11 @@ const Footer = () => {
                 <div className="social-media-wrapper">
                     <p>© 2024 Copyright, All Right Reserved, Universal FX</p>
                     <div className="social-media">
-                        <img src="/images/Social.svg" alt="social" />
+                        {/* <img src="/images/Social.svg" alt="social" /> */}
+                        <a target='_blank' href='https://t.me/+FGobMoQg6jowZWVk'><span><FaTelegram /></span></a>
+                        <a target='_blank' href='https://www.facebook.com/profile.php?id=61557046146543'><span><MdOutlineFacebook /></span></a>
+                        <a target='_blank' href='https://www.instagram.com/universalfxofficial?igsh=MXN1cnI3dXB1ejc3bg=='><span><FaInstagram /></span></a>
+                        {/* <span><FaLinkedin /></span> */}
                     </div>
                 </div>
             </section>

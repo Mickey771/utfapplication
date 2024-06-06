@@ -24,7 +24,7 @@ const SectionEight = () => {
     const handleFormSubmit = async () => { }
 
     return (
-        <section className="section_eight_container">
+        <section className="section_eight_container" id='section-eight' >
             <div className="section_eight">
                 <h2>Any Questions? We’ve Got You!</h2>
                 <main className="content">
