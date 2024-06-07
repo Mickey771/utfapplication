@@ -856,6 +856,15 @@
             display: flex;
             gap: 8px;
             align-items: center;
+            transition: 0.2s all linear;
+
+            & img {
+              width: 55px;
+              height: 55px;
+              border-radius: 55px;
+              background: #d9d9d9;
+              object-fit: cover;
+            }
           }
         }
       }

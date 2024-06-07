@@ -42,51 +42,51 @@ export const reviews = [
     {
         stars: 5,
         text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/emily.svg',
-        name: 'Emily Davis 1'
-    },
-    {
-        stars: 3,
-        text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/adams.svg',
-        name: 'Adam Lewis 2'
-    },
-    {
-        stars: 2,
-        text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/emily.svg',
-        name: 'Adam Lewis 3'
-    },
-    {
-        stars: 1,
-        text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/adams.svg',
-        name: 'Adam Lewis 4'
-    },
-    {
-        stars: 2,
-        text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/emily.svg',
-        name: 'Adam Lewis 5'
-    },
-    {
-        stars: 3,
-        text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/adams.svg',
-        name: 'Adam Lewis 6'
+        image: '/Usama.jpg',
+        name: 'Usama'
     },
     {
         stars: 4,
-        text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/emily.svg',
-        name: 'Adam Lewis 7'
+        text: '"As someone new to trading, Universal FX has made it incredibly easy. The Copy Trader Masters are like having my own personal trading team. I love watching my profits grow with minimal effort."',
+        image: '/Manish.jpg',
+        name: 'Manish'
+    },
+    {
+        stars: 4,
+        text: '"Universal FX is my secret weapon for generating passive income. The Copy Trader Masters consistently deliver profitable trades, and the referral program sweetens the deal even more."',
+        image: '/Ali.jpg',
+        name: 'Ali Sethi'
+    },
+    {
+        stars: 4,
+        text: '"Not only is Universal FX a fantastic platform for earning, but it also has a great community feel. The referral program encourages collaboration, and it\'s rewarding to share the success with others."',
+        image: '/Vijay.jpg',
+        name: 'Vijay'
     },
     {
         stars: 5,
-        text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
-        image: '/adams.svg',
-        name: 'Adam Lewis 8'
+        text: '"As a busy professional, I don\'t have time to research trades. Universal FX solves that problem. The Copy Trader Masters do the heavy lifting, allowing me to focus on my career while still earning from trading."',
+        image: '/Khaleel.jpg',
+        name: 'Khaleel'
     },
+    {
+        stars: 5,
+        text: '"I\'m not a financial expert, but Universal FX makes it easy for anyone to succeed. The Copy Trader Masters are the real deal, and the platform\'s intuitive design makes everything seamless. Love the passive income!"',
+        image: '/Umer.jpg',
+        name: 'Mr Umer'
+    },
+    {
+        stars: 4,
+        text: '"If you\'re looking for a way to make passive income with minimal effort, Universal FX is the answer. The Copy Trader Masters are brilliant, and the platform is top-notch. Don\'t miss out!"',
+        image: '/Sajda.jpg',
+        name: 'Sajda'
+    },
+    // {
+    //     stars: 5,
+    //     text: '"Universal FX makes trading accessible and profitable. The Copy Trader Masters do all the hard work, allowing me to earn without spending hours on research. Plus, the referral program is a great way to boost my income even further. Love it!"',
+    //     image: '/adams.svg',
+    //     name: 'Adam Lewis 8'
+    // },
 
 ]
 

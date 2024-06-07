@@ -30,7 +30,6 @@ const SectionSeven = () => {
         <section className='section_seven_container'>
             <div className='section_seven'>
                 <h2>What are our customers saying?</h2>
-
                 <div className="reviews">
                     {reviews.slice(currentReviewIndex, currentReviewIndex + 2).map((item, index) => {
                         const { stars, text, image, name } = item;
