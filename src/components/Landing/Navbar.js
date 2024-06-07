@@ -13,7 +13,13 @@ const Navbar = () => {
                 <img src="/images/logo.svg" alt="" />
                 <div className={`links ${isMenu && 'links_open'}`}>
                     {
-                        links.map((item, index) => <Link key={index} className={`links_item ${item === active && 'active'}`} to={item.path}>{item.text}</Link>)
+                        links.map((item, index) => {
+                            return (
+                                item.sectionLink ?
+                                    <a href={item.path}>{item.text}</a> :
+                                    <Link key={index} className={`links_item ${item === active && 'active'}`} to={item.path}>{item.text}</Link>
+                            )
+                        })
                     }
                 </div>
                 <div className='right'>

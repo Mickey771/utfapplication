@@ -2,7 +2,7 @@ import React from 'react'
 
 const SectionFour = () => {
     return (
-        <section className='section_four_container'>
+        <section id='section_four_container' className='section_four_container'>
             <div className="section_four">
                 <div className="left">
                     <h2>Earn with Universal FX</h2>

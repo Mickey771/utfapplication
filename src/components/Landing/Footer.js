@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { MdOutlineFacebook } from "react-icons/md";
-import { FaTwitter, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa6";
+import { FaInstagram, FaTelegram } from "react-icons/fa6";
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <section className="footer-wrapper">
+            <section id='footer' className="footer-wrapper">
                 <article>
                     <h2>Company</h2>
                     <Link to='/about'>About us</Link>
-                    <a href='#section-eight'> <p>Contact us</p></a>
-                    <a href='#section-eight'> <p>Careers</p></a>
+                    <a href='/#section-eight'> <p>Contact us</p></a>
+                    <a href='/#section-eight'> <p>Careers</p></a>
                     <p>Press</p>
                 </article>
                 <article>

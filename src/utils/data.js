@@ -10,11 +10,13 @@ export const links = [
     },
     {
         text: 'Earn',
-        path: '/earn'
+        path: '/#section_four_container',
+        sectionLink: true
     },
     {
         text: 'Contact',
-        path: '/contact'
+        path: '/#footer',
+        sectionLink: true
     },
 ]
 
