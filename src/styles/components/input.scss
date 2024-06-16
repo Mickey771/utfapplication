@@ -206,7 +206,7 @@ input:focus-visible {
 .input__verification {
   display: inline;
   text-align: center;
-  //   width: 30px;
+  min-width: 50px;
   height: 60px;
   width: 100%;
   font-size: 2.5rem;
@@ -385,10 +385,14 @@ input:focus-visible {
     padding: 10px;
   }
 
+  .signup__verificationInput {
+    gap: 15px;
+  }
+
   .input__verification {
     display: inline;
-    widthf: 10px;
-    heightf: 20px;
+    // width: 10px;
+    height: 40px;
     font-size: 1.25rem;
   }
 
