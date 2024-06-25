@@ -262,7 +262,14 @@ export default function SignupPage() {
             // formData.append('nin', nin)
             // formData.append('nin_picture', ninDoc)
 
-            dispatch(setFormData({ email, firstName, lastName, password }))
+            // accounting for user inputing space after name
+            const modifiedFirstName = firstName.split(' ')[0]
+            const modifiedLastName = lastName.split(' ')[0]
+            full_name = `${modifiedFirstName} ${modifiedLastName}`
+
+            // console.log('modifiedFirstName', modifiedFirstName, modifiedLastName);
+
+            dispatch(setFormData({ email, modifiedFirstName, modifiedLastName, password }))
 
             return api.post(
                 getRegisterUserURL(),
