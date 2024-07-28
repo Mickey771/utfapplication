@@ -24,18 +24,17 @@ import TermsAndConditions from '../components/TermsAndConditions';
 import Errorpage from '../components/Errorpage';
 import PrivacyPolicy from '../components/PrivacyPolicy';
 import RiskAndRewards from '../components/RiskAndRewards';
+import GraphPage from '../components/users/client/GraphPage';
 
 const Routers = () => (
     <BrowserRouter>
         <Routes>
-            {/* <Route path='/' element={<LaunchPage />} /> */}
             <Route path='/' element={<LandingPage />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/trading-signals' element={<TradingSignals />} />
             <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/risk-and-rewards' element={<RiskAndRewards />} />
-            {/* <Route path='/landing' element={<LandingPage />} /> */}
             <Route path='/signin' element={<SigninPage />} />
             <Route path='/signup' element={<SignupPage />} />
             <Route path='/password_reset' element={<PasswordResetPage />} />
@@ -45,6 +44,7 @@ const Routers = () => (
             <Route path='/trade' element={<TradePage />} />
             <Route path='/order/:pairName' element={<OrderPage />} />
             <Route path='/reward' element={<RewardPage />} />
+            <Route path='/reward/graph' element={<GraphPage />} />
             <Route path='/market' element={<MarketPage />} />
             <Route path='/account' element={<AccountPage />} />
             <Route path='/terms' element={<TermsPage />} />
