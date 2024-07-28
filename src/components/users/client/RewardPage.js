@@ -6,9 +6,10 @@ import { Image } from "../../Image";
 import { SideBar, Header, } from "./SideBar";
 import { requireLogin, closeAllPositions, calculateAccountSummary } from '../../../api/user.js';
 import { setConfig } from '../../../api/configuration.js';
+import TokenDetails from '../../tokenDetails.js';
 
 export default function RewardPage() {
-    requireLogin();
+    // requireLogin();
 
     let accountSummary = calculateAccountSummary()
     if (accountSummary.marginLevel <= 5 && accountSummary.margin > 0)
@@ -165,14 +166,7 @@ export default function RewardPage() {
                             </div>
                         </div>
 
-                        <div className="ufx_token">
-                            <h2>UFX Token</h2>
-                            <p>The is also known as the Roseline Etuokwu Sigma Secondary School Quiz Competition is one of the philanthropic activities of the club to bring the club closer to the grassroots. It is the club’s believe that the secondary school students would grow to become University students. As such, introducing the club to them right from their secondary school days would guide them in manners to act and way of life to live as a student of higher institutions. During this competition, moral and educational knowledge are displayed and students are being trained in manners to become whole human and stand “for all that is pure”. This we believe would keep the students on the right track before entering the university.
-                            </p>
-                            <p>  With the inceptions of the competition, over 1,300 secondary schools across the 6 States of the SouthWest Region of Nigeria have participated and witnessed the participation of over 2,600 students in this competition. Apart from the participation of these students and schools, gift items are also won by different schools, students, and teachers for their participation.
-                            </p>
-                            <p className='bold'>  There are different prices to be won for this year’s aspect of the competition as the overall winner stands the chance to win a sum of N5,000,000, N3,000,000 for the 1st runner up and N2,000,000 for the Second Runner Up. There are also other prices ranging from electronic gadgets and books to be won in various stages of the competition</p>
-                        </div>
+                        <TokenDetails />
                     </div>
                 </div>
             </div>

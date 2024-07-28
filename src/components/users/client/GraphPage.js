@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import TradingViewChart from '../../TradingViewChart'
+import { Link } from 'react-router-dom'
 
 const GraphPage = () => {
     const [selected, setSelected] = useState('Forex')
@@ -9,7 +10,7 @@ const GraphPage = () => {
             <section className='graph'>
                 <div className="graph_top">
                     <div className="graph_top_left">
-                        <img src="/images/leftarrow.png" className='arrow' alt="left arrow" />
+                        <Link to={'/reward'}><img src="/images/leftarrow.png" className='arrow' alt="left arrow" /></Link>
                         <img src="/images/ufx.png" className='logo' alt="logo" />
                         <h1>Market Summary</h1>
                     </div>
