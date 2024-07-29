@@ -9,7 +9,7 @@ import { setConfig } from '../../../api/configuration.js';
 import TokenDetails from '../../tokenDetails.js';
 
 export default function RewardPage() {
-    // requireLogin();
+    requireLogin();
 
     let accountSummary = calculateAccountSummary()
     if (accountSummary.marginLevel <= 5 && accountSummary.margin > 0)
