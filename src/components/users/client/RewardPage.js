@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import $ from 'jquery';
-import { Image } from "../../Image";
 import { SideBar, Header, } from "./SideBar";
 import { requireLogin, closeAllPositions, calculateAccountSummary } from '../../../api/user.js';
 import { setConfig } from '../../../api/configuration.js';
