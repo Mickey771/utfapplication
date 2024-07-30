@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TokenDetails = () => {
+const TokenDetail = () => {
     return (
         <div className="ufx_token">
             <h1>UFX Token Airdrop Details</h1>
@@ -46,4 +46,4 @@ const TokenDetails = () => {
     )
 }
 
-export default TokenDetails
+export default TokenDetail

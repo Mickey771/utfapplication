@@ -5,7 +5,7 @@ import $ from 'jquery';
 import { SideBar, Header, } from "./SideBar";
 import { requireLogin, closeAllPositions, calculateAccountSummary } from '../../../api/user.js';
 import { setConfig } from '../../../api/configuration.js';
-import TokenDetails from '../../tokenDetails.js';
+import TokenDetail from '../../TokenDetail.js';
 
 export default function RewardPage() {
     requireLogin();
@@ -165,7 +165,7 @@ export default function RewardPage() {
                             </div>
                         </div>
 
-                        <TokenDetails />
+                        <TokenDetail />
                     </div>
                 </div>
             </div>
