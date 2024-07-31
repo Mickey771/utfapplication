@@ -80,31 +80,31 @@ export default function HomePage() {
                                 <div className="dashboard__invested">
                                     <span className="">
                                         <div className="dashboard__data">
-                                            <p className="dashboard__dataHead">Balance</p>
+                                            <p className="dashboard__dataHead">Deposit Amount</p>
                                             <p className="dashboard__figureMinor">${(user.wallet_balance).toLocaleString("en-US")}</p>
                                         </div>
                                     </span>
                                     <span className="">
                                         <div className="dashboard__data">
-                                            <p className="dashboard__dataHead">Margin</p>
+                                            <p style={{ color: 'white' }} className="dashboard__dataHead">Margin</p>
                                             <p className="dashboard__figureMinor">${accountSummary.margin.toLocaleString("en-US")}</p>
                                         </div>
                                     </span>
                                     <span className="">
                                         <div className="dashboard__data">
-                                            <p className="dashboard__dataHead">Free Margin</p>
+                                            <p style={{ color: 'white' }} className="dashboard__dataHead">Free Margin</p>
                                             <p className="dashboard__figureMinor">${accountSummary.freeMargin.toLocaleString("en-US")}</p>
                                         </div>
                                     </span>
                                     <span className="">
                                         <div className="dashboard__data">
-                                            <p className="dashboard__dataHead">Margin Level</p>
+                                            <p style={{ width: '93px' }} className="dashboard__dataHead">Invested value</p>
                                             <p className="dashboard__figureMinor">{accountSummary.marginLevel.toFixed(2)}%</p>
                                         </div>
                                     </span>
                                     <span className="">
                                         <div className="dashboard__data">
-                                            <p className="dashboard__dataHead">Leverage</p>
+                                            <p className="dashboard__dataHead"></p>
                                             <p className="dashboard__figureMinor">1:{accountSummary.leverage}</p>
                                         </div>
                                     </span>
