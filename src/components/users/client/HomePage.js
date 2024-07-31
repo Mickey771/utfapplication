@@ -104,7 +104,7 @@ export default function HomePage() {
                                     </span>
                                     <span className="">
                                         <div className="dashboard__data">
-                                            <p className="dashboard__dataHead"></p>
+                                            <p className="dashboard__dataHead">{"_"}</p>
                                             <p className="dashboard__figureMinor">1:{accountSummary.leverage}</p>
                                         </div>
                                     </span>
