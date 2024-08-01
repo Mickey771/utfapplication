@@ -25,6 +25,7 @@ import Errorpage from '../components/Errorpage';
 import PrivacyPolicy from '../components/PrivacyPolicy';
 import RiskAndRewards from '../components/RiskAndRewards';
 import GraphPage from '../components/users/client/GraphPage';
+import ReferPage from '../components/users/client/ReferPage';
 
 const Routers = () => (
     <BrowserRouter>
@@ -48,6 +49,7 @@ const Routers = () => (
             <Route path='/market' element={<MarketPage />} />
             <Route path='/account' element={<AccountPage />} />
             <Route path='/terms' element={<TermsPage />} />
+            <Route path='/refer' element={<ReferPage />} />
             <Route path='*' element={<Errorpage />} />
         </Routes>
         <NotificationModal />
