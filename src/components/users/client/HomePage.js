@@ -98,16 +98,16 @@ export default function HomePage() {
                                     </span>
                                     <span className="">
                                         <div className="dashboard__data">
-                                            <p style={{ width: '93px' }} className="dashboard__dataHead">Invested value</p>
+                                            <p style={{ width: '93px' }} className="dashboard__dataHead">Invested profit</p>
                                             <p className="dashboard__figureMinor">{accountSummary.marginLevel.toFixed(2)}%</p>
                                         </div>
                                     </span>
-                                    <span className="">
+                                    {/* <span className="">
                                         <div className="dashboard__data">
                                             <p className="dashboard__dataHead">{"_"}</p>
                                             <p className="dashboard__figureMinor">1:{accountSummary.leverage}</p>
                                         </div>
-                                    </span>
+                                    </span> */}
                                 </div>
                             </div>
                             <div className="dashboardAction">
