@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import TradingViewChart from '../../TradingViewChart'
 import { Link } from 'react-router-dom'
+import Graph from '../../Graph'
 
 const GraphPage = () => {
     const [selected, setSelected] = useState('Forex')
@@ -47,7 +48,14 @@ const GraphPage = () => {
                         <p>Approximate price:  <span>$456.665</span></p>
                     </div>
                 </div>
-                <div style={{ height: '733px', marginTop: '17px' }}> <TradingViewChart /></div>
+                {/* <div style={{ height: '733px', marginTop: '17px' }}> <TradingViewChart /></div> */}
+                <div style={{ height: '733px', marginTop: '27px' }}>
+                    <div style={{ marginBottom: '20px' }}>
+                        <p style={{ margin: 0, padding: 0 }}>UFX Total Market Value</p>
+                        <h3 style={{ margin: 0, padding: 0 }}>$10</h3>
+                    </div>
+                    <Graph />
+                </div>
             </section>
         </section>
     )
