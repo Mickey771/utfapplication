@@ -5,6 +5,7 @@ import $ from 'jquery';
 import { SideBar, Header, } from "./SideBar";
 import { requireLogin, closeAllPositions, calculateAccountSummary } from '../../../api/user.js';
 import TokenDetail from '../../TokenDetail.js';
+import Graph from '../../Graph.js';
 
 export default function RewardPage() {
     requireLogin();
@@ -74,6 +75,13 @@ export default function RewardPage() {
                             </div>
                         </div>
 
+                        <div style={{ marginTop: '27px' }}>
+                            <div style={{ marginBottom: '20px' }}>
+                                <p style={{ margin: 0, padding: 0 }}>UFX Total Market Value</p>
+                                <h3 style={{ margin: 0, padding: 0 }}>$10</h3>
+                            </div>
+                            <Graph />
+                        </div>
                         <TokenDetail />
                     </div>
                 </div>
