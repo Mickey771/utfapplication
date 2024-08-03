@@ -2,13 +2,13 @@ import React from 'react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const data = [
-    { date: '11-10', value: 1 },
-    { date: '11-11', value: 3 },
-    { date: '11-12', value: 5 },
-    { date: '11-13', value: 5 },
-    { date: '11-14', value: 7 },
-    { date: '11-15', value: 7 },
-    { date: '11-16', value: 10 },
+    { date: '8-10', value: 1 },
+    { date: '8-11', value: 3 },
+    { date: '8-12', value: 5 },
+    { date: '8-13', value: 5 },
+    { date: '8-14', value: 7 },
+    { date: '8-15', value: 7 },
+    { date: '8-16', value: 10 },
 ];
 
 const Graph = () => {

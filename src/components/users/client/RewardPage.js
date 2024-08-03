@@ -78,7 +78,7 @@ export default function RewardPage() {
                         <div style={{ marginTop: '27px' }}>
                             <div style={{ marginBottom: '20px' }}>
                                 <p style={{ margin: 0, padding: 0 }}>UFX Total Market Value</p>
-                                <h3 style={{ margin: 0, padding: 0 }}>$10</h3>
+                                <h3 style={{ margin: 0, padding: 0 }}>$1000000</h3>
                             </div>
                             <Graph />
                         </div>

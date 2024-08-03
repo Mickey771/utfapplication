@@ -45,17 +45,17 @@ const GraphPage = () => {
                         <img src="/images/rightarrow.png" alt="right arrow" />
                     </div>
                     <div className="price">
-                        <p>Approximate price:  <span>$456.665</span></p>
+                        <p>Approximate price:  <span>$10</span></p>
                     </div>
                 </div>
-                {/* <div style={{ height: '733px', marginTop: '17px' }}> <TradingViewChart /></div> */}
-                <div style={{ height: '733px', marginTop: '27px' }}>
+                <div style={{ height: '733px', marginTop: '17px' }}> <TradingViewChart /></div>
+                {/* <div style={{ height: '733px', marginTop: '27px' }}>
                     <div style={{ marginBottom: '20px' }}>
                         <p style={{ margin: 0, padding: 0 }}>UFX Total Market Value</p>
                         <h3 style={{ margin: 0, padding: 0 }}>$10</h3>
                     </div>
                     <Graph />
-                </div>
+                </div> */}
             </section>
         </section>
     )
