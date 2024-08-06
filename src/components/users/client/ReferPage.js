@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { SideBar, Header } from "./SideBar";
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -6,6 +6,10 @@ import { setConfig } from '../../../api/configuration.js';
 import { requireLogin } from '../../../api/user.js';
 
 const ReferPage = () => {
+
+    const [showAlert, setShowAlert] = useState(false);
+    const referralCodeRef = useRef(null);
+
     requireLogin();
 
     const user = useSelector(state => state.account.user);
@@ -15,11 +19,16 @@ const ReferPage = () => {
 
     const copyAddress = (event) => {
         event.preventDefault();
-        var copyText = $("#referralBox__code")[0].innerText;
-        navigator.clipboard.writeText(copyText);
-        $('.alert').fadeIn('show');
-
-        setTimeout(() => $('.alert').hide(), 2000)
+        if (referralCodeRef.current) {
+            navigator.clipboard.writeText(referralCodeRef.current.textContent)
+                .then(() => {
+                    setShowAlert(true);
+                    setTimeout(() => setShowAlert(false), 2000);
+                })
+                .catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+        }
     }
 
     const openReferralPage = async (event) => {
@@ -44,13 +53,15 @@ const ReferPage = () => {
                                 <p className="referralBox__title">Share to make money</p>
                                 <p className="referralBox__subTitle">Your referral link</p>
                                 <div className="referralBox__codeBox">
-                                    <small id="referralBox__code" className="referralBox__code">{referralLink}</small>
-                                    <div className="referralBox__button" onClick={copyAddress}>Copy</div>
+                                    <small id="referralBox__code" className="referralBox__code" ref={referralCodeRef}>{referralLink}</small>
+                                    <div style={{ cursor: 'pointer' }} className="referralBox__button" onClick={copyAddress}>Copy</div>
                                 </div>
-                                <div class="alert">
-                                    <span class="closebtn" onClick={(event) => event.target.parentElement.style.display = 'none'}>&times;</span>
-                                    Copied to clipboard
-                                </div>
+                                {showAlert && (
+                                    <div className="alert">
+                                        <span className="closebtn" onClick={() => setShowAlert(false)}>&times;</span>
+                                        Copied to clipboard
+                                    </div>
+                                )}
                             </div>
 
                             <div className="commissionBox">
